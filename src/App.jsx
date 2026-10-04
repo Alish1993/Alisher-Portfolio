@@ -9,20 +9,20 @@ import Contact from './components/Contact';
 
 export default function App() {
   return (
-    <div className="overflow-x-hidden text-neutral-300 antialiased selection:bg-cyan-300 selection:text-cyan-900">
-      <div className="fixed top-0 -z-10 h-full w-full">
-        <div className="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"></div>{' '}
-      </div>
-      <div className="container mx-auto px-8">
+    <div className="relative min-h-screen overflow-x-hidden bg-slate-950 text-slate-100 selection:bg-cyan-300 selection:text-slate-950">
+      <div className="pointer-events-none fixed inset-0 -z-10 bg-[radial-gradient(circle_at_top,_rgba(99,102,241,0.25),_transparent_35%),radial-gradient(circle_at_bottom_right,_rgba(34,211,238,0.2),_transparent_30%)]" />
+
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <Navbar />
-        <Hero />
-        <About />
-        <Technologi />
-        <Experience />
-        <Project />
-        <Contact />
+        <main>
+          <Hero />
+          <About />
+          <Technologi />
+          <Experience />
+          <Project />
+          <Contact />
+        </main>
       </div>
     </div>
   );
 }
-//
