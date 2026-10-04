@@ -32,7 +32,7 @@ const iconVariants = (duration) => ({
 export default function Technologi() {
   return (
     <section className="section-shell mt-10 px-5 py-10 sm:px-8 lg:px-10">
-      <div className="text-center">
+      <div className="text-center lg:text-left">
         <span className="section-tag">Tech stack</span>
         <h2 className="section-title mt-4">Technologies I work with.</h2>
       </div>

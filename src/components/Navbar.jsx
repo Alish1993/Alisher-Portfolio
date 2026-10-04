@@ -11,13 +11,13 @@ const socialLinks = [
 
 export default function Navbar() {
   return (
-    <header className="sticky top-0 z-50 border-b border-white/10 bg-slate-950/75 backdrop-blur-xl">
-      <nav className="mx-auto flex max-w-6xl items-center justify-between py-4 px-4 sm:px-6 lg:px-8">
+    <header className="sticky top-0 z-50 border-b border-white/10 bg-slate-950/70 backdrop-blur-xl">
+      <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
         <a href="#top" className="flex items-center gap-3" aria-label="Alisher Sarin home">
           <img src={logo} alt="Alisher Sarin logo" className="h-12 w-12 rounded-full border border-cyan-400/40 bg-slate-900/80 p-1" />
           <div>
             <p className="text-lg font-semibold tracking-tight text-white">Alisher Sarin</p>
-            <p className="text-[10px] uppercase tracking-[0.25em] text-slate-400">Full Stack</p>
+            <p className="text-[10px] uppercase tracking-[0.22em] text-slate-400">Full Stack</p>
           </div>
         </a>
 

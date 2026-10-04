@@ -1,12 +1,12 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { PROJECTS } from '../constants';
-import { fadeInLeft, fadeInUp, fadeIn } from '../constants/motion';
+import { fadeInLeft, fadeInUp } from '../constants/motion';
 
 export default function Project() {
   return (
     <section id="projects" className="section-shell mt-10 px-5 py-10 sm:px-8 lg:px-10">
-      <div className="mb-8 text-center lg:text-left">
+      <div className="mb-8">
         <span className="section-tag">Projects</span>
         <h2 className="section-title mt-4">Selected work.</h2>
       </div>
@@ -18,9 +18,9 @@ export default function Project() {
             {...(index % 2 === 0 ? fadeInLeft : fadeInUp)}
             className="glass-card overflow-hidden rounded-[1.75rem] p-4 sm:p-5"
           >
-            <div className="grid items-center gap-6 lg:grid-cols-[220px_1fr]">
+            <div className="grid items-center gap-6 lg:grid-cols-[230px_1fr]">
               <div className="overflow-hidden rounded-2xl border border-white/10 bg-slate-900/60">
-                <img src={project.image} alt={project.title} className="h-44 w-full object-cover" />
+                <img src={project.image} alt={project.title} className="h-48 w-full object-cover" />
               </div>
 
               <div>
